@@ -100,7 +100,7 @@ const ServiceContent = ({ servicesData, clickedService }) => {
                             }
                             onClick={() => handleServiceSelect(service)}
                           >
-                            <a rel="canonical">
+                            <a >
                               {service.service_name}
                             </a>
                           </li>

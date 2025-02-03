@@ -12,10 +12,10 @@ export async function fetchMetaData(pageName) {
   // Find the metadata for the specific page
   return metaData.find(meta => meta?.page_name === pageName);
 }
+
 export const metadata = async () => {
   const metaData = await fetchMetaData("home");
   return {
-    canonical: 'https://smilecloudfamilydental.com/', // Add canonical URL
     title: metaData?.meta_title,
     description: metaData?.meta_description,
   };

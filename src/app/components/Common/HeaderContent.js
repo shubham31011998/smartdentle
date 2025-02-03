@@ -20,7 +20,7 @@ const HeaderContent = ({ headerData }) => {
                 <div className="pbmit-logo-area">
                   <div className="site-branding">
                     <h1 className="site-title">
-                      <Link href="/" rel="canonical">
+                      <Link href="/" >
                         <Image
                           className="logo-img header-logo"
                           src={headerData?.logo_image}
@@ -92,7 +92,7 @@ const HeaderContent = ({ headerData }) => {
                                   fontSize: "12px",
                                   marginTop: "17px",
                                 }}
-                                rel="canonical"
+                                
                               >
                                 {/* <h1
                                   style={{

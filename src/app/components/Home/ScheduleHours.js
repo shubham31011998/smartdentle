@@ -94,7 +94,7 @@ const ScheduleHours = async () => {
               <div className="pbmit-text_aditor">
                 <p>{locationCards[0]?.card_description1}</p>
               </div>
-              <Link href={locationCards[0]?.card_description2} rel="canonical">
+              <Link href={locationCards[0]?.card_description2} >
                 <div className="pbmit-btn pbmit-btn-outline">
                   <span className="pbmit-button-content-wrapper">
                     <span className="pbmit-button-icon pbmit-align-icon-right">

@@ -44,7 +44,7 @@ const AboutUs = async () => {
                   dangerouslySetInnerHTML={{ __html: aboutUsData[0]?.description }}
                 />
 
-                <Link className="pbmit-btn" href="/aboutus" rel="canonical">
+                <Link className="pbmit-btn" href="/aboutus" >
                   <span className="pbmit-button-content-wrapper">
                     <span className="pbmit-button-icon pbmit-align-icon-right">
                       <svg
