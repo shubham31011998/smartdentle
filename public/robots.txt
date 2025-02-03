@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://smilecloudfamilydental.com/api/sitemap.xml
