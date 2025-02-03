@@ -65,7 +65,7 @@ const Footer = async () => {
                     <Link
                       className="underline-none"
                       href="https://maps.app.goo.gl/aJBzoFW2Pc4M4vKj9"
-                      rel="canonical"
+                      
                     >
                       2750 West Northwest Hwy, Suite 210,
                       <br />
@@ -76,7 +76,7 @@ const Footer = async () => {
                     <Link
                       className="underline-none"
                       href="tel:+1 (972) 972 4999"
-                      rel="canonical"
+                      
                     >
                       +1 (972) 972 4999
                     </Link>
@@ -85,7 +85,7 @@ const Footer = async () => {
                     <Link
                       className="underline-none"
                       href="mailto:info@smilecloudfamilydental.com"
-                      rel="canonical"
+                      
                     >
                       info@smilecloudfamilydental.com
                     </Link>
@@ -101,25 +101,25 @@ const Footer = async () => {
                 <div className="textwidget">
                   <ul>
                     <li>
-                      <Link rel="canonical" href="/aboutus">About Us</Link>
+                      <Link  href="/aboutus">About Us</Link>
                     </li>
                     <li>
-                      <Link rel="canonical" href="/contactus">Contact Us</Link>
+                      <Link  href="/contactus">Contact Us</Link>
                     </li>
                     <li>
-                      <Link rel="canonical" href="/services">Services</Link>
+                      <Link  href="/services">Services</Link>
                     </li>
                     <li>
-                      <Link rel="canonical" href="/blogs">Blogs</Link>
+                      <Link  href="/blogs">Blogs</Link>
                     </li>
                     <li>
-                      <Link rel="canonical" href="/new-patients">New Patients</Link>
+                      <Link  href="/new-patients">New Patients</Link>
                     </li>
                     <li>
-                      <Link rel="canonical" href="/insurance">Insurance</Link>
+                      <Link  href="/insurance">Insurance</Link>
                     </li>
                     <li>
-                      <Link rel="canonical" href="/implants">Implants</Link>
+                      <Link  href="/implants">Implants</Link>
                     </li>
                   </ul>
                 </div>
@@ -131,31 +131,31 @@ const Footer = async () => {
     <div className="textwidget">
       <ul>
         <li>
-          <Link rel="canonical" href="https://smilecloudfamilydental.com/services/general-dentistry">General Dentistry</Link>
+          <Link  href="https://smilecloudfamilydental.com/services/general-dentistry">General Dentistry</Link>
         </li>
         <li>
-          <Link rel="canonical" href="https://smilecloudfamilydental.com/services/restorative-dentistry">Restorative Dentistry</Link>
+          <Link  href="https://smilecloudfamilydental.com/services/restorative-dentistry">Restorative Dentistry</Link>
         </li>
         <li>
-          <Link rel="canonical" href="https://smilecloudfamilydental.com/services/cosmetic-dentistry">Cosmetic Dentistry</Link>
+          <Link  href="https://smilecloudfamilydental.com/services/cosmetic-dentistry">Cosmetic Dentistry</Link>
         </li>
         <li>
-          <Link rel="canonical" href="https://smilecloudfamilydental.com/services/sedation-dentistry">Sedation Dentistry</Link>
+          <Link  href="https://smilecloudfamilydental.com/services/sedation-dentistry">Sedation Dentistry</Link>
         </li>
         <li>
-          <Link rel="canonical" href="https://smilecloudfamilydental.com/services/orthodontics">Orthodontics</Link>
+          <Link  href="https://smilecloudfamilydental.com/services/orthodontics">Orthodontics</Link>
         </li>
         <li>
-          <Link rel="canonical" href="https://smilecloudfamilydental.com/services/pediatric-dentistry">Pediatric Dentistry</Link>
+          <Link  href="https://smilecloudfamilydental.com/services/pediatric-dentistry">Pediatric Dentistry</Link>
         </li>
         <li>
-          <Link rel="canonical" href="https://smilecloudfamilydental.com/services/root-canals">Root Canals</Link>
+          <Link  href="https://smilecloudfamilydental.com/services/root-canals">Root Canals</Link>
         </li>
         <li>
-          <Link rel="canonical" href="https://smilecloudfamilydental.com/services/emergency-dentist">Emergency Dentist</Link>
+          <Link  href="https://smilecloudfamilydental.com/services/emergency-dentist">Emergency Dentist</Link>
         </li>
         <li>
-          <Link rel="canonical" href="https://smilecloudfamilydental.com/services/cleanings-checkups">Cleanings & Checkups</Link>
+          <Link  href="https://smilecloudfamilydental.com/services/cleanings-checkups">Cleanings & Checkups</Link>
         </li>
       </ul>
     </div>

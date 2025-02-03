@@ -26,7 +26,6 @@ export async function fetchMetaData(pageName) {
 export const metadata = async () => {
   const metaData = await fetchMetaData("about us");
   return {
-    canonical: 'https://smilecloudfamilydental.com/aboutus', // Add canonical URL
     title: metaData?.meta_title,
     description: metaData?.meta_description,
   };

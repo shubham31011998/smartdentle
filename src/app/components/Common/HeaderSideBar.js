@@ -33,7 +33,7 @@ const HeaderSidebar = ({ isSidebarOpen, toggleSidebar, headerData }) => {
             <ul className={`${styles['navigation-list']} ${isSidebarOpen ? styles.open : ''}`}>
                 {headerData?.data.map((header, index) => (
                     <li key={index}>
-                        <Link href={header?.page_url} onClick={handleMenuItemClick} rel="canonical">
+                        <Link href={header?.page_url} onClick={handleMenuItemClick} >
                             {header?.page_name.toUpperCase()}
                         </Link>
                     </li>

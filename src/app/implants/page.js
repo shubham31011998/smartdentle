@@ -109,7 +109,7 @@ const page = async () => {
             dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
           />
         )}
-        <link rel="canonical" href="https://smilecloudfamilydental.com/implants" /> {/* Add canonical URL */}
+        {/* Remove canonical URL */}
       </Head>
       <Banner />
       <OtherLinkContent testimonials={testimonials} />

@@ -31,7 +31,7 @@ export const metadata = async () => {
   return {
     title: metaData?.meta_title,
     description: metaData?.meta_description,
-    canonical: 'https://smilecloudfamilydental.com/blogs', // Add canonical URL
+    // Remove canonical URL
   };
 }
 
@@ -114,6 +114,7 @@ const page = async () => {
             dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
           />
         )}
+        {/* Remove canonical URL */}
       </Head>
       <Slider pageName="blogs" showContactButton={false} />
       {loading ? (

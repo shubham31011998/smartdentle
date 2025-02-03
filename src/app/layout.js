@@ -20,6 +20,7 @@ import "./styles/themify-icons.css";
 import CallButton from "./components/Common/CallButton";
 import ContactUsBar from "./components/Common/ContactUsBar";
 import FlexBookLink from "./components/Common/FlexBook";
+import CanonicalTag from "@/components/common/CanonicalTag";
 
 export const metadata = {
   title: "Your Site Title", 
@@ -54,6 +55,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+        <CanonicalTag />
         <Script type="application/ld+json" id="organization-schema">
           {`
           {

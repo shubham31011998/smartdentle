@@ -24,7 +24,7 @@ const ContactUsBar = () => {
                   </Link>
                 </li>
               </ul>
-            </div> */}
+            </div> */}  
 
 
             <div className="col-md-2 pbmit-col_2">
@@ -33,7 +33,7 @@ const ContactUsBar = () => {
                   <XIcon sx={{ fontSize: "40px !important", color: "white", margin: "5px" }} />
                   <div className="pbmit-ihbox-contents">
                     <h2 className="pbmit-element-title">
-                      <Link className="underline-none" rel="canonical" href="https://x.com/smilecloudfam">Twitter
+                      <Link className="underline-none"  href="https://x.com/smilecloudfam">Twitter
                       </Link>
                     </h2>
                   </div>
@@ -46,7 +46,7 @@ const ContactUsBar = () => {
                   <LinkedInIcon sx={{ fontSize: "40px !important", color: "white", margin: "5px" }} />
                   <div className="pbmit-ihbox-contents">
                     <h2 className="pbmit-element-title">
-                      <Link className="underline-none" rel="canonical" href="https://www.linkedin.com/company/smilecloud-family-dental/">LinkedIn
+                      <Link className="underline-none"  href="https://www.linkedin.com/company/smilecloud-family-dental/">LinkedIn
                       </Link>
                     </h2>
                   </div>
@@ -59,7 +59,7 @@ const ContactUsBar = () => {
                   <YouTubeIcon sx={{ fontSize: "40px !important", color: "white", margin: "5px" }} />
                   <div className="pbmit-ihbox-contents">
                     <h2 className="pbmit-element-title">
-                      <Link className="underline-none" rel="canonical" href="https://m.youtube.com/@smilecloudfamilydental">YouTube
+                      <Link className="underline-none"  href="https://m.youtube.com/@smilecloudfamilydental">YouTube
                       </Link>
                     </h2>
                   </div>
@@ -72,7 +72,7 @@ const ContactUsBar = () => {
                   <InstagramIcon sx={{ fontSize: "40px !important", color: "white", margin: "5px" }} />
                   <div className="pbmit-ihbox-contents">
                     <h2 className="pbmit-element-title">
-                      <Link className="underline-none" rel="canonical" href="https://www.instagram.com/smilecloudfamilydental/">Instagram
+                      <Link className="underline-none"  href="https://www.instagram.com/smilecloudfamilydental/">Instagram
                       </Link>
                     </h2>
                   </div>
@@ -86,7 +86,7 @@ const ContactUsBar = () => {
                   <FacebookIcon sx={{ fontSize: "40px !important", color: "white", margin: "5px" }} />
                   <div className="pbmit-ihbox-contents">
                     <h2 className="pbmit-element-title">
-                      <Link className="underline-none" rel="canonical" href="https://www.facebook.com/profile.php?id=61557541169170">Facebook
+                      <Link className="underline-none"  href="https://www.facebook.com/profile.php?id=61557541169170">Facebook
                       </Link>
                     </h2>
                   </div>
@@ -100,7 +100,7 @@ const ContactUsBar = () => {
                   <Image src={Tiktok} alt="blog.blog_image_alt_text" />
                   <div className="pbmit-ihbox-contents">
                     <h2 className="pbmit-element-title" style={{ paddingLeft: "8px" }}>
-                      <Link className="underline-none" rel="canonical" href="https://www.tiktok.com/@smilecloudfamilydental">Tiktok
+                      <Link className="underline-none"  href="https://www.tiktok.com/@smilecloudfamilydental">Tiktok
                       </Link>
                     </h2>
                   </div>
@@ -114,7 +114,7 @@ const ContactUsBar = () => {
                   <AddIcCallIcon sx={{ fontSize: "40px !important", color: "white", margin: "5px" }} />
                   <div className="pbmit-ihbox-contents">
                     <h2 className="pbmit-element-title">
-                      <Link className="underline-none" rel="canonical" href="tel:+1 (972) 972 4999">+1 (972) 972 4999
+                      <Link className="underline-none"  href="tel:+1 (972) 972 4999">+1 (972) 972 4999
                       </Link>
                     </h2>
                   </div>
@@ -128,7 +128,7 @@ const ContactUsBar = () => {
                   <MailOutlineIcon sx={{ fontSize: "40px !important", color: "white", margin: "5px" }} />
                   <div className="pbmit-ihbox-contents">
                     <h2 className="pbmit-element-title">
-                      <Link className="underline-none" rel="canonical" href="mailto:info@smilecloudfamilydental.com"> info@smilecloudfamilydental.com
+                      <Link className="underline-none"  href="mailto:info@smilecloudfamilydental.com"> info@smilecloudfamilydental.com
                       </Link>
                     </h2>
                   </div>

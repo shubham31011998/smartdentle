@@ -47,7 +47,7 @@ const MakeAppointment = async () => {
                     </h4>
                   </div>
                   <div className="pbmit-ihbox-btn">
-                    <Link href="/contactus" rel="canonical">
+                    <Link href="/contactus" >
                       <span className="pbmit-button-text">Make Appoinment</span>
                       <span className="pbmit-button-icon-wrapper">
                         <span className="pbmit-button-icon">
