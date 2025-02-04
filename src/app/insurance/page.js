@@ -2,6 +2,7 @@ import React from "react";
 import Banner from "../components/Insurance/Banner";
 import InsuranceContent from "../components/Insurance/InsuranceContent";
 import Head from "next/head";
+import BreadcrumbSchema from "@/components/common/BreadcrumbSchema";
 
 export async function fetchMetaData(pageName) {
   const url = process.env.NEXT_PUBLIC_SERVER_URL;
@@ -72,6 +73,7 @@ const page = async () => {
         )}
         {/* Remove canonical URL */}
       </Head>
+      <BreadcrumbSchema/>
       <Banner />
       <InsuranceContent />
     </>

@@ -97,7 +97,7 @@ const Footer = async () => {
             </div>
             <div className="pbmit-footer-widget-col-2 col-md-6 col-lg-3">
               <div className="widget">
-                <h2 className="widget-title">Dental Services</h2>
+                <h2 className="widget-title">Services</h2>
                 <div className="textwidget">
                   <ul>
                     <li>

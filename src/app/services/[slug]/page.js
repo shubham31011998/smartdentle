@@ -3,6 +3,7 @@ import axios from "axios";
 import Slider from "@/app/components/Home/Slider";
 import ServiceContant from "@/app/components/Services/ServiceContant";
 import FullServiceDetails from "@/app/components/Services/FullServiceDetails";
+import BreadcrumbSchema from "@/components/common/BreadcrumbSchema";
 
 // Function to create a slug from a title
 const createSlug = (title) => {
@@ -36,7 +37,7 @@ export async function fetchMetaData(slug) {
   }
 
   export const generateMetadata = async ({ params }) => {
-    const metaData = await fetchMetaData(params.slug); 
+    const metaData = await fetchMetaData(params?.slug); 
     return {
       title: metaData?.service_name || "service Not Found", 
       description: metaData?.meta_tag_description || "No description available.",
@@ -71,6 +72,7 @@ const SlugPage = async ({ params }) => {
 
   return (
     <>
+    <BreadcrumbSchema/>
       <Slider pageName="services" showContactButton={false} />
       {matchedService ? (
         // <FullServiceDetails servicesData={matchedService} />

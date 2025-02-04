@@ -21,6 +21,7 @@ import CallButton from "./components/Common/CallButton";
 import ContactUsBar from "./components/Common/ContactUsBar";
 import FlexBookLink from "./components/Common/FlexBook";
 import CanonicalTag from "@/components/common/CanonicalTag";
+import BreadcrumbSchema from "@/components/common/BreadcrumbSchema";
 
 export const metadata = {
   title: "Your Site Title", 
@@ -128,40 +129,6 @@ export default function RootLayout({ children }) {
               "target": "https://smilecloudfamilydental.com/?s={search_term_string}",
               "query-input": "required name=search_term_string"
             }
-          }
-          `}
-        </Script>
-        <Script type="application/ld+json" id="dynamic-breadcrumb-schema">
-          {`
-          {
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            "itemListElement": [
-              {
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Home",
-                "item": "https://smilecloudfamilydental.com/"
-              },
-              {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "Services",
-                "item": "https://smilecloudfamilydental.com/services"
-              },
-              {
-                "@type": "ListItem",
-                "position": 3,
-                "name": "Service Category",
-                "item": "https://smilecloudfamilydental.com/services/service-category"
-              },
-              {
-                "@type": "ListItem",
-                "position": 4,
-                "name": "Specific Service",
-                "item": "https://smilecloudfamilydental.com/services/service-category/specific-service"
-              }
-            ]
           }
           `}
         </Script>

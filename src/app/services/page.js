@@ -3,6 +3,7 @@ import ServiceContant from "../components/Services/ServiceContant";
 import axios from 'axios';
 import Slider from "../components/Home/Slider";
 import Head from "next/head";
+import BreadcrumbSchema from "@/components/common/BreadcrumbSchema";
 
 export async function fetchMetaData(pageName) {
     const url = process.env.NEXT_PUBLIC_SERVER_URL;
@@ -105,6 +106,7 @@ const page = async () => {
                     />
                 )}
             </Head>
+            <BreadcrumbSchema/>
             <Slider pageName="services" showContactButton={false} />
             <ServiceContant servicesData={servicesData} />
         </>

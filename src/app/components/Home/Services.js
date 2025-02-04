@@ -30,6 +30,14 @@ const Services = async () => {
     console.error(error);
   }
 
+  
+const createSlug = (title) => {
+  return title
+    .toLowerCase()
+    .replace(/[^a-z0-9\s]/g, "")
+    .replace(/\s+/g, "-")
+    .trim();
+};
   return (
     <>
       <section className="section-xl pbmit-bg-color-global pbmit-extend-animation pbmit-extend-animation service-three_bg">
@@ -77,6 +85,7 @@ const Services = async () => {
               {/** list of services and respective images */}
               <div className="swiper-hover-slide-nav col-md-7 col-lg-7">
                 <ul className="pbmit-hover-inner">
+                  {console.log(servicesData)}
                   {servicesData.map((service, index) => {
                     return (
                       <>
@@ -112,7 +121,7 @@ const Services = async () => {
                             <Link
                               className="pbmit-link"
                               href={{
-                                pathname: "services",
+                                pathname: `services/${createSlug(service?.service_name)}`,
                                 // query: {
                                 //   search: `${service.service_name}`,
                                 // },

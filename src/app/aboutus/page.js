@@ -4,6 +4,7 @@ import AboutUsSection from "../components/AboutUs/AboutUsSection";
 import DoctorInfo from "../components/AboutUs/DoctorInfo";
 import Team from "../components/AboutUs/Team";
 import Slider from "../components/Home/Slider";
+import BreadcrumbSchema from "@/components/common/BreadcrumbSchema";
 
 export async function fetchMetaData(pageName) {
   const url = process.env.NEXT_PUBLIC_SERVER_URL;
@@ -33,6 +34,7 @@ export const metadata = async () => {
 
 const page = () => {
   return <>
+    <BreadcrumbSchema/>
     <Slider pageName="about us" showContactButton={false} />
     <ContactDetails />
     <AboutUsSection />

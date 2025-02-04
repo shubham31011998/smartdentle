@@ -2,7 +2,7 @@ import React from "react";
 import FullBlog from "../../components/Blogs/FullBlog";
 import axios from "axios";
 import Slider from "../../components/Home/Slider";
-import Head from "next/head";
+import BreadcrumbSchema from "@/components/common/BreadcrumbSchema";
 
 // Function to create a slug from a title
 const createSlug = (title) => {
@@ -33,19 +33,19 @@ export async function fetchMetaData(slug) {
       console.error("Error fetching metadata:", error);
       return null; // or some default value
     }
-  }
+}
 
-  export const generateMetadata = async ({ params }) => {
+export const generateMetadata = async ({ params }) => {
     const metaData = await fetchMetaData(params.slug); 
     return {
       title: metaData?.blog_title || "Blog Not Found", 
       description: metaData?.meta_tag_description || "No description available.",
     };
-  };
+};
 
 // Fetch blog data directly in the component
 const SlugPage = async ({ params }) => {
-  const { slug } = params;
+  const { slug } = await params; // Awaiting params here
   let blogsData = [];
   let matchedBlog = null;
 
@@ -72,6 +72,7 @@ const SlugPage = async ({ params }) => {
 
   return (
     <>
+      <BreadcrumbSchema/>
       <Slider pageName="blogs" showContactButton={false} />
       {matchedBlog ? (
         <FullBlog blog={matchedBlog} blogsData={blogsData} />
