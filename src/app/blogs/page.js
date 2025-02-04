@@ -3,6 +3,7 @@ import Head from "next/head";
 import BlogsDetails from "../components/Blogs/BlogsDetails";
 import axios from "axios";
 import Slider from "../components/Home/Slider";
+import BreadcrumbSchema from "@/components/common/BreadcrumbSchema";
 
 export async function fetchMetaData(pageName) {
   const url = process.env.NEXT_PUBLIC_SERVER_URL;
@@ -116,6 +117,7 @@ const page = async () => {
         )}
         {/* Remove canonical URL */}
       </Head>
+      <BreadcrumbSchema/>
       <Slider pageName="blogs" showContactButton={false} />
       {loading ? (
         <div className="loader"></div> // Display loader while fetching data

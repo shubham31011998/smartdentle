@@ -1,6 +1,7 @@
 import React from "react";
 import Banner from "../components/NewPatients/Banner";
 import NewPatientsContent from "../components/NewPatients/NewPatientsContent";
+import BreadcrumbSchema from "@/components/common/BreadcrumbSchema";
 
 export async function fetchMetaData(pageName) {
     const url = process.env.NEXT_PUBLIC_SERVER_URL;
@@ -28,6 +29,7 @@ export const metadata = async () => {
 
 const page = () => {
     return <>
+        <BreadcrumbSchema/>
         <Banner />
         <NewPatientsContent />
     </>;

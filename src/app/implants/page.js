@@ -3,6 +3,7 @@ import Banner from "../components/Implants/Banner";
 import OtherLinkContent from "../components/Implants/ImplantsContent";
 import Slider from "../components/Home/Slider";
 import Head from "next/head";
+import BreadcrumbSchema from "@/components/common/BreadcrumbSchema";
 
 export async function fetchMetaData(pageName) {
   const url = process.env.NEXT_PUBLIC_SERVER_URL;
@@ -111,6 +112,7 @@ const page = async () => {
         )}
         {/* Remove canonical URL */}
       </Head>
+      <BreadcrumbSchema/>
       <Banner />
       <OtherLinkContent testimonials={testimonials} />
     </>

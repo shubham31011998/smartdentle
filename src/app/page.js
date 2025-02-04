@@ -1,3 +1,4 @@
+import BreadcrumbSchema from "@/components/common/BreadcrumbSchema";
 import HomePage from "./components/Home/HomePage";
 
 export async function fetchMetaData(pageName) {
@@ -25,6 +26,7 @@ export default function Home() {
   return (
     <>
       <HomePage />
+      <BreadcrumbSchema/>
     </>
   );
 }

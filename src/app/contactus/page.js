@@ -5,6 +5,7 @@ import ContactDetails from "../components/ContactUs/ContactDetails";
 import ContactForm from "../components/ContactUs/ContactForm";
 import Slider from "../components/Home/Slider";
 import Head from "next/head";
+import BreadcrumbSchema from "@/components/common/BreadcrumbSchema";
 
 // Fetch metadata for the "Contact Us" page
 export async function fetchMetaData(pageName) {
@@ -84,6 +85,7 @@ const page = async () => {
         )}
         {/* Remove canonical URL */}
       </Head>
+      <BreadcrumbSchema/>
       <Header />
       <Slider pageName="contact us" showContactButton={false} />
       <ContactDetails />
