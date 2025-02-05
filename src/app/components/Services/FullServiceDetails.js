@@ -5,7 +5,6 @@ import { useRouter, useSearchParams } from "next/navigation";
 import Link from "next/link";
 
 const FullServiceDetails = ({ servicesData }) => {
-  console.log("servicesData",servicesData)
   const [selectedService, setSelectedService] = useState(null);
   const [loading, setLoading] = useState(false);
   const serviceContentRef = useRef(null);

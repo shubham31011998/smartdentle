@@ -85,7 +85,6 @@ const createSlug = (title) => {
               {/** list of services and respective images */}
               <div className="swiper-hover-slide-nav col-md-7 col-lg-7">
                 <ul className="pbmit-hover-inner">
-                  {console.log(servicesData)}
                   {servicesData.map((service, index) => {
                     return (
                       <>

@@ -9,7 +9,6 @@ const BreadcrumbSchema = () => {
   const [breadcrumbList, setBreadcrumbList] = useState([]);
 
   useEffect(() => {
-    console.log("Pathname changed:", pathname); // ✅ Log route changes
     if (!pathname) return;
 
     const pathSegments = pathname.split("/").filter(Boolean);
@@ -29,7 +28,6 @@ const BreadcrumbSchema = () => {
       item: baseUrl,
     });
 
-    console.log("Updated Breadcrumb List:", newBreadcrumbList); // ✅ Debug breadcrumbs
 
     setBreadcrumbList(newBreadcrumbList);
   }, [pathname]);

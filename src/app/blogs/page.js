@@ -94,7 +94,6 @@ const page = async () => {
       throw new Error("Failed to fetch data");
     }
     blogsData = response.data;
-    console.log(blogsData) // Corrected to assign properly
     loading = false;
 
     // Sort blogsData by published_date in descending order
