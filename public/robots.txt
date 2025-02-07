@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://smilecloudfamilydental.com/api/sitemap.xml
+Sitemap: https://smilecloudfamilydental.com/sitemap.xml

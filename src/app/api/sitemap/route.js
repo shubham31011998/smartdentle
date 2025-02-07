@@ -60,7 +60,7 @@ export async function GET() {
         .map(
           (blog) => `
         <url>
-          <loc>${baseUrl}/blog/${createSlug(blog?.blog_title)}</loc>
+          <loc>${baseUrl}/blogs/${createSlug(blog?.blog_title)}</loc>
           <lastmod>${new Date(blog.updated_at).toISOString()}</lastmod>
           <changefreq>weekly</changefreq>
           <priority>0.8</priority>
